@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Web server, por el puerto 37600
+ * Web server, por el puerto 24000
  * @author Luis Benavides
  * Se han realizado algunas modificaciones
  * @author Ricardo Olarte
@@ -31,9 +31,9 @@ public class HttpServer {
     public void startServer() throws IOException {
         ServerSocket serverSocket = null;
         try {
-            serverSocket = new ServerSocket(37600);
+            serverSocket = new ServerSocket(24000);
         } catch (IOException e) {
-            System.err.println("Could not listen on port: 37600");
+            System.err.println("Could not listen on port: 24000");
             System.exit(1);
         }
         boolean running = true;
